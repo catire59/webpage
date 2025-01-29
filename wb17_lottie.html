@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lottie Animations</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/lottie.css" rel="stylesheet">
+<link href="css/wb17_lottie.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lottie-player.js"></script>
+<script src="js/lottie-interactivity.min.js"></script>
+<script src="js/wwb19.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var headerMenu_dropdownToggle = document.querySelectorAll('#headerMenu .dropdown-toggle');
+   headerMenu_dropdownToggle.forEach(item => 
+   {
+      var dropdown = new bootstrap.Dropdown(item, {popperConfig:{placement:item.getAttribute('data-bs-placement')}});
+   });
+   var headerMenu_dropdown = document.querySelectorAll('#headerMenu .dropdown');
+   headerMenu_dropdown.forEach(item => 
+   {
+      item.addEventListener('shown.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.add('show');
+      });
+      item.addEventListener('hidden.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.remove('show');
+      });
+   });
+   LottieInteractivity.create(
+   {
+      mode: 'scroll',
+      player: '#creativeLottie',
+      actions: [{ visibility: [0.1, 0.8], type: 'seek', frames: [0]}]
+   });
+   document.getElementById('wb_interactiveLottie').addEventListener('click', function() { document.getElementById('interactiveLottie').getLottie().goToAndPlay(0) }, false);
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#introLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_introLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollintroLayoutGrid()
+   {
+      var $obj = $("#wb_introLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollintroLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollintroLayoutGrid();
+   });
+   $("a[href*='#compatibilityLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_compatibilityLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollcompatibilityLayoutGrid()
+   {
+      var $obj = $("#wb_compatibilityLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollcompatibilityLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollcompatibilityLayoutGrid();
+   });
+   $("a[href*='#featuresLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_featuresLayoutGrid').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#interactiveLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_interactiveLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollinteractiveLayoutGrid()
+   {
+      var $obj = $("#wb_interactiveLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollinteractiveLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollinteractiveLayoutGrid();
+   });
+   $("a[href*='#moreFeaturesLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_moreFeaturesLayoutGrid').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#clientsLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_clientsLayoutGrid').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollclientsLayoutGrid()
+   {
+      var $obj = $("#wb_clientsLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollclientsLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollclientsLayoutGrid();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerLogo1" style="display:inline-block;width:122px;height:33px;z-index:0;">
+<h1 id="headerLogo1">LOTTIE</h1>
+</div>
+<div id="wb_headerLogo2" style="display:inline-block;width:210px;height:35px;z-index:1;">
+<h1 id="headerLogo2">ANIMATIONS</h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:block;width:100%;z-index:2;">
+<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".headerMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="#prices" class="nav-link">Lightweight</a>
+</li>
+<li class="nav-item">
+<a href="#coffee" class="nav-link">Scalable</a>
+</li>
+<li class="nav-item">
+<a href="#about" class="nav-link">Interactive</a>
+</li>
+<li class="nav-item">
+<a href="#contact" class="nav-link">Customizable</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_intro">
+<div id="intro">
+<div class="col-1">
+<div id="wb_introHeading" style="display:block;width:100%;z-index:3;">
+<h2 id="introHeading">Lightweight, scalable animations for your websites</h2>
+</div>
+<div id="wb_introText">
+<span style="color:#6B6B6B;font-family:Arial;font-size:19px;line-height:26px;">Lottie Animations are the future of web animations. It uses the SVG and JSON code to animate SVG paths &amp; shapes. A Lottie animation file is lighter than a static image (jpg, png or webp), and several times smaller than an animated GIF or video (MP4). </span>
+</div>
+<div id="wb_introLottie" style="display:block;width:100%;z-index:5;">
+<lottie-player id="introLottie" autoplay loop speed="0.4" mode="bounce" src="json/wwb-logo-purple.json"></lottie-player>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_introLayoutGrid">
+<div id="introLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_creativeHeading" style="display:block;width:100%;z-index:6;">
+<h2 id="creativeHeading">Creative Lottie Animations</h2>
+</div>
+<div id="wb_creativeText">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;line-height:29px;"><br>This template uses JSON animations from lottiefiles.com. This website has thousands of great animations made by professional designers from around the world. You can easily pick up an animation that suits your web site and use it in just a few clicks.<br><br>Lottie Animations are trending now because the files are light in comparison with other web animations formats like GIF or videos.<br><br>Lottie is text and vector-based, so no matter how big you scale it, it’ll never pixelate on any device. </span>
+</div>
+<a id="creativeButton" href="https://lottiefiles.com/" target="_blank" title="Lottie Files" style="display:inline-block;width:210px;height:44px;z-index:8;">Discover Animations</a>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_creativeLottie" style="display:block;width:100%;z-index:9;">
+<a href="https://lottiefiles.com/74052-project-management-v2" target="_blank" title="Project management"><lottie-player id="creativeLottie" loop speed="1" mode="normal" src="json/50467-business-solution-presentation.json"></lottie-player></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_compatibilityLayoutGrid">
+<div id="compatibilityLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading6" style="display:block;width:100%;z-index:10;">
+<h2 id="Heading6">Compatibility</h2>
+</div>
+<div id="wb_compatibilityText">
+<span style="color:#6B6B6B;font-family:Arial;font-size:19px;line-height:26px;">Lottie Animations are compatible with all modern browsers. Chrome, Firefox, Opera, Safari, or Edge. They will look great on all devices and in all browsers.</span>
+</div>
+<div id="wb_compatibilityLottie" style="display:block;width:100%;z-index:12;">
+<a href="https://lottiefiles.com/72874-user-profile-v2" target="_blank" title="User profile"><lottie-player id="compatibilityLottie" autoplay loop speed="1" mode="normal" src="json/72874-user-profile-v2.json"></lottie-player></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_featuresLayoutGrid">
+<div id="featuresLayoutGrid">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_featuresLottie" style="display:block;width:100%;z-index:13;">
+<a href="https://lottiefiles.com/59662-jumping-partners" target="_blank" title="Jumping partners"><lottie-player id="featuresLottie" autoplay loop speed="1" mode="normal" src="json/59662-jumping-partners.json"></lottie-player></a>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_featuresCard" style="display:flex;width:100%;z-index:14;" class="card">
+<div id="featuresCard-card-body">
+<div id="featuresCard-card-item0">Features</div>
+<div id="featuresCard-card-item1"><i class="fa fa-check"></i>Lottie Animation library with thousands free animations</div>
+<hr id="featuresCard-card-item2">
+<div id="featuresCard-card-item3"><i class="fa fa-check"></i>Interactive</div>
+<hr id="featuresCard-card-item4">
+<div id="featuresCard-card-item5"><i class="fa fa-check"></i>Lightweight</div>
+<hr id="featuresCard-card-item6">
+<div id="featuresCard-card-item7"><i class="fa fa-check"></i>Scalable</div>
+<hr id="featuresCard-card-item8">
+<div id="featuresCard-card-item9"><i class="fa fa-check"></i>All major browsers supported</div>
+<hr id="featuresCard-card-item10">
+<div id="featuresCard-card-item11"><a href="https://lottiefiles.com/" target="_blank">Discover Animations</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_interactiveLayoutGrid">
+<div id="interactiveLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_interactiveHeading" style="display:block;width:100%;z-index:15;">
+<h2 id="interactiveHeading">Interactive</h2>
+</div>
+<div id="wb_interactiveText">
+<span style="color:#6B6B6B;font-family:Arial;font-size:19px;">Lottie Animations can be played automatically, on hover, on click, on scroll or as parallax effect!</span>
+</div>
+<div id="wb_interactiveLottie" style="display:block;width:100%;z-index:17;">
+<lottie-player id="interactiveLottie" loop speed="1" mode="normal" src="json/57488-graphic-design.json"></lottie-player>
+</div>
+<div id="wb_interactiveTip">
+<span style="color:#6B6B6B;font-family:Arial;font-size:15px;">(click on the image to start the animation)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_moreFeaturesLayoutGrid">
+<div id="moreFeaturesLayoutGrid">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_moreFeaturesLottie1" style="display:block;width:100%;z-index:19;">
+<a href="https://lottiefiles.com/50468-effective-coworking" target="_blank" title="Effective coworking"><lottie-player id="moreFeaturesLottie1" autoplay loop speed="1" mode="normal" src="json/50468-effective-coworking.json"></lottie-player></a>
+</div>
+<div id="wb_moreFeaturesCard1" style="display:flex;width:100%;z-index:20;" class="card">
+<div id="moreFeaturesCard1-card-body">
+<div id="moreFeaturesCard1-card-item0"><h3>EASY TO USE AND CUSTOMIZE</h3></div>
+<div id="moreFeaturesCard1-card-item1">Like all widgets, Lottie Animations includes many customization options.</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+<div class="col-4">
+<div id="wb_moreFeaturesLottie2" style="display:block;width:100%;z-index:21;">
+<a href="https://lottiefiles.com/48604-leadership" target="_blank" title="Leadership"><lottie-player id="moreFeaturesLottie2" autoplay loop speed="1" mode="normal" src="json/48604-leadership.json"></lottie-player></a>
+</div>
+<div id="wb_moreFeaturesCard2" style="display:flex;width:100%;z-index:22;" class="card">
+<div id="moreFeaturesCard2-card-body">
+<div id="moreFeaturesCard2-card-item0"><h3>EXTRAORDINARY PERFORMANCE</h3></div>
+<div id="moreFeaturesCard2-card-item1">600% smaller when compared to GIF</div>
+</div>
+</div>
+</div>
+<div class="col-5">
+</div>
+<div class="col-6">
+<div id="wb_moreFeaturesLottie3" style="display:block;width:100%;z-index:23;">
+<a href="https://lottiefiles.com/52421-adaptive-web-design" target="_blank" title="Adaptive web design"><lottie-player id="moreFeaturesLottie3" autoplay loop speed="1" mode="normal" src="json/52421-adaptive-web-design.json"></lottie-player></a>
+</div>
+<div id="wb_moreFeaturesCard3" style="display:flex;width:100%;z-index:24;" class="card">
+<div id="moreFeaturesCard3-card-body">
+<div id="moreFeaturesCard3-card-item0"><h3>SCALABLE</h3></div>
+<div id="moreFeaturesCard3-card-item1">Lottie is text and vector-based, so no matter how big you scale it, it’ll never pixelate on any device.</div>
+</div>
+</div>
+</div>
+<div class="col-7">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_clientsLayoutGrid">
+<div id="clientsLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading5" style="display:block;width:100%;z-index:25;">
+<h2 id="Heading5">Used by designers and developers from 70,000+ companies worldwide</h2>
+</div>
+<div id="wb_clientsImage1" style="display:inline-block;width:114px;height:54px;opacity:0.50;z-index:26;">
+<img src="images/amazon.png" id="clientsImage1" alt="" width="114" height="55">
+</div>
+<div id="wb_clientsImage2" style="display:inline-block;width:113px;height:53px;opacity:0.50;z-index:27;">
+<img src="images/bbc.png" id="clientsImage2" alt="" width="113" height="54">
+</div>
+<div id="wb_clientsImage3" style="display:inline-block;width:100px;height:55px;opacity:0.50;z-index:28;">
+<img src="images/disney.png" id="clientsImage3" alt="" width="100" height="56">
+</div>
+<div id="wb_clientsImage4" style="display:inline-block;width:98px;height:49px;opacity:0.50;z-index:29;">
+<img src="images/google.png" id="clientsImage4" alt="" width="98" height="50">
+</div>
+<div id="wb_clientsImage5" style="display:inline-block;width:172px;height:53px;opacity:0.50;z-index:30;">
+<img src="images/microsoft.png" id="clientsImage5" alt="" width="172" height="54">
+</div>
+<div id="wb_clientsImage6" style="display:inline-block;width:99px;height:51px;opacity:0.50;z-index:31;">
+<img src="images/netflix.png" id="clientsImage6" alt="" width="99" height="52">
+</div>
+<div id="wb_clientsImage7" style="display:inline-block;width:87px;height:54px;opacity:0.50;z-index:32;">
+<img src="images/nike.png" id="clientsImage7" alt="" width="87" height="54">
+</div>
+<div id="wb_clientsImage8" style="display:inline-block;width:107px;height:52px;opacity:0.50;z-index:33;">
+<img src="images/spotify.png" id="clientsImage8" alt="" width="107" height="53">
+</div>
+<div id="wb_clientsImage9" style="display:inline-block;width:114px;height:53px;opacity:0.50;z-index:34;">
+<img src="images/tiktok.png" id="clientsImage9" alt="" width="114" height="54">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:50;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:35;">
+<a href="#intro"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_linksLayoutGrid">
+<div id="linksLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>Animations by Irfan Munawar<br><br></strong>https://lottiefiles.com/irfanmunawar</span>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>SOCIAL MEDIA</strong></span>
+</div>
+<div id="wb_linksMenu1" style="display:block;width:100%;z-index:38;">
+<ul id="linksMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="https://www.facebook.com/wysiwygwb" target="_blank">Facebook</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="http://www.wysiwygwebbuilder.com/forum/app.php/feed?mode=news" target="_self">RSS</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="http://twitter.com/wysiwyg_wb" target="_blank">Twitter</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCu3yYRA9WyiFBZEZiAM0bkA" target="_blank">YouTube</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>SUPPORT</strong></span>
+</div>
+<div id="wb_linksMenu2" style="display:block;width:100%;z-index:40;">
+<ul id="linksMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="http://wysiwygwebbuilder.com/getting_started.html" target="_self">Online&nbsp;Tutorials</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.wysiwygwebbuilder.com/forum/viewforum.php?f=10" target="_self">FAQ</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://www.wysiwygwebbuilder.com/forum/index.php" target="_self">Forum</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="http://wysiwygwebbuilder.com/support.html" target="_self">Support</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="http://wysiwygwebbuilder.com/privacy.html" target="_self">Privacy&nbsp;Policy</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footerLayoutGrid">
+<div id="footerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_footerText">
+<span style="color:#FFFFFF;font-family:Arial;font-size:15px;">© 2021 Copyright: https://www.wysiwygwebbuillder.com</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

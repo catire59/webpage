@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pencil</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/pencil.css" rel="stylesheet">
+<link href="css/wb14_pencil.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#home']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[href*='#about']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_about').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[href*='#services']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[href*='#next-website']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_next-website').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[href*='#projects']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_projects').offset().top }, 600, 'easeOutSine');
+      });
+      $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right', toggle: true});
+      $("#PanelMenu1_markup ul li a").click(function(event)
+      {
+          $.panel.hide($("#PanelMenu1_panel"));
+      });
+      $("#PanelMenu1-close a").click(function(event)
+      {
+          $.panel.hide($("#PanelMenu1_panel"));
+      });
+      $("a[href*='#galleryGrid']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_galleryGrid').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[href*='#footer']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_footer').offset().top }, 600, 'easeOutSine');
+      });
+      $("a[data-rel='gallery']").attr('rel', 'gallery');
+      $("#gallery").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+      if (iOS)
+      {
+         $('#wb_home,#wb_next-website').css('background-attachment', 'scroll');
+      }
+   });
+</script>
+</head>
+<body>
+   <div id="wb_home">
+      <div id="home">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_JavaScript2" style="display:block;width:100%;z-index:0;">
+                  <div style="color:#000000;font-size:37px;font-family:Arial;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="typewriter-deluxe">
+                     <span id="typewriter-text" style="border-right:0.08em solid #000000;"></span>
+                  </div>
+                  <script>                  
+                  var data = "Pencil Template^Just some random ideas...^Created with WYSIWYG Web Builder";
+                  var lines = data.split('^');
+                  var reverse = false;
+                  var index = 0;
+                  var text = '';
+                  var typeWriterElement = document.getElementById("typewriter-text");
+                  function typeWriterDeluxe() 
+                  {
+                     var i = index % lines.length;
+                     var line = lines[i];
+                     if (reverse) 
+                     {
+                        text = line.substring(0, text.length - 1);
+                     } 
+                     else 
+                     {
+                        text = line.substring(0, text.length + 1);
+                     }
+                     typeWriterElement.innerHTML = text;
+                     var timeout = 250 - Math.random() * (250/2);
+                     if (reverse) 
+                     { 
+                        timeout /= 2; 
+                     }
+                     if (!reverse && text === line) 
+                     {
+                        timeout = 3000;
+                        reverse = true;
+                     } 
+                     else 
+                     if (reverse && text === '') 
+                     {
+                        reverse = false;
+                        index++;
+                        timeout = 500;
+                     }
+                     setTimeout(typeWriterDeluxe, timeout);
+                  }
+                  typeWriterDeluxe();
+                  </script>
+               </div>
+               <input type="submit" id="home-button" onclick="$('html, body').stop().animate({ scrollTop: $('#wb_about').offset().top }, 600, 'easeOutSine');return false;" name="" value="Learn More" style="display:inline-block;width:156px;height:37px;z-index:1;cursor:pointer">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_about">
+      <div id="about">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_about-text1">
+                  <span style="color:#000000;font-family:Arial;font-size:27px;line-height:30px;"><strong>What We Do?</strong></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:15px;"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</span>
+               </div>
+               <input type="submit" id="about-button" onclick="$('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top }, 600, 'easeOutSine');return false;" name="" value="Learn More" style="display:inline-block;width:156px;height:37px;z-index:3;cursor:pointer">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_services">
+      <div id="services">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_services-heading1" style="display:block;width:100%;z-index:4;">
+                  <h2 id="services-heading1">Services</h2>
+               </div>
+               <div id="wb_services-heading2" style="display:block;width:100%;z-index:5;">
+                  <h1 id="services-heading2">What do we offer?</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_features">
+      <div id="features">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_features-icon1" style="display:inline-block;width:44px;height:44px;text-align:center;z-index:6;">
+                  <a href="./wb14_pencil.html"><div id="features-icon1"><i class="features-icon1"></i></div></a>
+               </div>
+               <div id="wb_features-text1">
+                  <span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>HEADING 1<br><br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:15px;">Lorem ipsum dolor sit amet</span>
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_features-icon2" style="display:inline-block;width:44px;height:44px;text-align:center;z-index:8;">
+                  <a href="./wb14_pencil.html"><div id="features-icon2"><i class="features-icon2"></i></div></a>
+               </div>
+               <div id="wb_features-text2">
+                  <span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>HEADING 2<br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:15px;"><br>Lorem ipsum dolor sit amet</span>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_features-icon3" style="display:inline-block;width:44px;height:44px;text-align:center;z-index:10;">
+                  <a href="./wb14_pencil.html"><div id="features-icon3"><i class="features-icon3"></i></div></a>
+               </div>
+               <div id="wb_features-text3">
+                  <span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>HEADING 3<br><br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:15px;">Lorem ipsum dolor sit ame</span>
+               </div>
+            </div>
+            <div class="col-4">
+               <div id="wb_features-icon4" style="display:inline-block;width:44px;height:44px;text-align:center;z-index:12;">
+                  <a href="./wb14_pencil.html"><div id="features-icon4"><i class="features-icon4"></i></div></a>
+               </div>
+               <div id="wb_features-text4">
+                  <span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>HEADING 4<br><br></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:15px;">Lorem ipsum dolor sit ame</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_next-website">
+      <div id="next-website-overlay"></div>
+      <div id="next-website">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Heading5" style="display:block;width:100%;z-index:14;">
+                  <h1 id="Heading5">Welcome to your next website!</h1>
+               </div>
+               <input type="submit" id="Button3" onclick="window.location.href='http://wysiwygwebbuilder.com/download.html';return false;" name="" value="Download Now" style="display:inline-block;width:156px;height:37px;z-index:15;cursor:pointer">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_projects">
+      <div id="projects">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_projects-text1">
+                  <span style="color:#3E3E3E;font-family:Arial;font-size:15px;">Portfolio</span><span style="color:#3E3E3E;font-family:Arial;font-size:12px;"><br></span>
+               </div>
+               <div id="wb_projects-text2" style="display:block;width:100%;z-index:17;">
+                  <h1 id="projects-text2">Recent Projects</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-one">
+      <div id="project-one">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:18;">
+                  <img src="images/750x300.png" id="Image1" alt="" width="455" height="182">
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_Card1" style="display:flex;width:calc(100% - 20px);z-index:19;" class="card">
+                  <div id="Card1-card-body">
+                     <div id="Card1-card-item0"><h2>Project One</h2></div>
+                     <div id="Card1-card-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</div>
+                     <div id="Card1-card-item2">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-line1">
+      <div id="project-line1">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line1" style="display:block;width:100%;z-index:20;">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-two">
+      <div id="project-two">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:21;">
+                  <img src="images/750x300.png" id="Image2" alt="" width="455" height="182">
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_Card2" style="display:flex;width:calc(100% - 20px);z-index:22;" class="card">
+                  <div id="Card2-card-body">
+                     <div id="Card2-card-item0"><h2>Project Two</h2></div>
+                     <div id="Card2-card-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</div>
+                     <div id="Card2-card-item2">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-line2">
+      <div id="project-line2">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line2" style="display:block;width:100%;z-index:23;">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-three">
+      <div id="project-three">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:24;">
+                  <img src="images/750x300.png" id="Image3" alt="" width="455" height="182">
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_Card3" style="display:flex;width:calc(100% - 20px);z-index:25;" class="card">
+                  <div id="Card3-card-body">
+                     <div id="Card3-card-item0"><h2>Project Three</h2></div>
+                     <div id="Card3-card-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</div>
+                     <div id="Card3-card-item2">View Project</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_project-line3">
+      <div id="project-line3">
+         <div class="row">
+            <div class="col-1">
+               <hr id="Line3" style="display:block;width:100%;z-index:26;">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="Layer1" style="position:fixed;text-align:left;left:auto;right:0px;top:0px;width:71px;height:74px;z-index:54;z-index:11111;">
+      <nav id="wb_PanelMenu1" style="position:absolute;left:10px;top:12px;width:50px;height:50px;text-align:center;z-index:27;">
+         <a href="#PanelMenu1_markup" id="PanelMenu1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+         </a>
+         <div id="PanelMenu1_markup">
+            <div id="PanelMenu1-close"><a role="button" aria-hidden="true" href="#">&times;</a></div>
+            <ul role="menu">
+               <li role="menuitem"><a href="#home" class="nav-link">Home</a></li>
+               <li role="menuitem"><a href="#about" class="nav-link">About Me</a></li>
+               <li role="menuitem"><a href="#next-website" class="nav-link">Blog</a></li>
+               <li role="menuitem"><a href="#projects" class="nav-link">Projects</a></li>
+               <li role="menuitem"><a href="#galleryGrid" class="nav-link">Gallery</a></li>
+               <li role="menuitem"><a href="#footer" class="nav-link">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+   <div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:11px;top:auto;bottom:11px;width:50px;height:50px;z-index:55;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:28;">
+         <a href="#home"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <div id="wb_galleryGrid">
+      <div id="galleryGrid">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_galleryHeading1" style="display:block;width:100%;z-index:29;">
+                  <h1 id="galleryHeading1">Gallery</h1>
+               </div>
+               <div id="wb_galleryHeading2" style="display:block;width:100%;z-index:30;">
+                  <h1 id="galleryHeading2">Check out these great pictures!</h1>
+               </div>
+               <div id="wb_gallery" style="display:block;width:100%;z-index:31;">
+                  <div id="gallery">
+                     <div class="thumbnails">
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number1.png" data-rel=""><img alt="" src="images/number1.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number2.png" data-rel=""><img alt="" src="images/number2.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number3.png" data-rel=""><img alt="" src="images/number3.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number4.png" data-rel=""><img alt="" src="images/number4.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <div class="clearfix visible-col4"></div>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number5.png" data-rel=""><img alt="" src="images/number5.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number6.png" data-rel=""><img alt="" src="images/number6.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number7.png" data-rel=""><img alt="" src="images/number7.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <figure class="thumbnail">
+                           <div class="frame">
+                              <a href="images/number8.png" data-rel=""><img alt="" src="images/number8.png" class="image" width="229" height="229"></a>
+                           </div>
+                        </figure>
+                        <div class="clearfix visible-col4"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer-overlay"></div>
+      <div id="footer">
+         <div class="row">
+            <div class="col-1">
+               <div id="wb_Text11">
+                  <span style="color:#FFFFFF;"><strong>TEAM</strong></span>
+               </div>
+               <div id="wb_Card5" style="display:flex;width:100%;z-index:34;" class="card">
+                  <div id="Card5-card-body">
+                     <img id="Card5-card-item0" src="images/avatar_cat_bw.jpg" width="250" height="250" alt="" title="">
+                     <div id="Card5-card-item1">John Jones</div>
+                     <div id="Card5-card-item2">Developer</div>
+                     <div id="Card5-card-item3"><i class="fa fa-twitter"></i></div>
+                     <div id="Card5-card-item4"><i class="fa fa-facebook"></i></div>
+                     <div id="Card5-card-item5"><i class="fa fa-envelope"></i></div>
+                     <div id="Card5-card-item6"><i class="fa fa-linkedin"></i></div>
+                  </div>
+               </div>
+               <div id="wb_Card4" style="display:flex;width:100%;z-index:35;" class="card">
+                  <div id="Card4-card-body">
+                     <img id="Card4-card-item0" src="images/avatar_cat_bw.jpg" width="250" height="250" alt="" title="">
+                     <div id="Card4-card-item1">Bill Brown</div>
+                     <div id="Card4-card-item2">Designer</div>
+                     <div id="Card4-card-item3"><i class="fa fa-twitter"></i></div>
+                     <div id="Card4-card-item4"><i class="fa fa-facebook"></i></div>
+                     <div id="Card4-card-item5"><i class="fa fa-envelope"></i></div>
+                     <div id="Card4-card-item6"><i class="fa fa-linkedin"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-2">
+               <div id="wb_Text9">
+                  <span style="color:#FFFFFF;"><strong>CONTACT</strong></span>
+               </div>
+               <div id="wb_Text10">
+                  <span style="color:#FFFFFF;">#28, 3nd floor, WYSIWYG Plaza, Web City, Builder, WB 1969 United States<br><br><strong>Email</strong>: info@wysiwygwebbuilder.com<br><br><strong>Phone</strong>: +1 123 123 1234<br><br><strong>Website</strong>: www.wysiwygwebbuilder.com</span>
+               </div>
+            </div>
+            <div class="col-3">
+               <div id="wb_Text1">
+                  <span style="color:#FFFFFF;"><strong>NAVIGATE</strong></span>
+               </div>
+               <nav id="wb_CssMenu2" style="display:block;width:100%;z-index:39;">
+                  <ul id="CssMenu2" role="menubar" class="nav">
+                     <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Home</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">About</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Services</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Products</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-4">
+               <div id="wb_Text5">
+                  <span style="color:#FFFFFF;"><strong>FOLLOW US</strong></span>
+               </div>
+               <nav id="wb_CssMenu5" style="display:block;width:100%;z-index:41;">
+                  <ul id="CssMenu5" role="menubar" class="nav">
+                     <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Facebook</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Instagram</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Twitter</a>
+                     </li>
+                     <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">YouTube</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
